@@ -1,0 +1,25 @@
+.social-links-wrapper {
+  margin-block: 2em;
+  gap: 1em;
+  color: #fff;
+}
+.social-links-wrapper .title:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  background-color: #fff;
+}
+.social-links-wrapper .title span {
+  padding: 1em;
+  background-color: #000;
+  z-index: 2;
+}
+.social-links-wrapper .link-style .icon-wrapper {
+  margin-left: 0.5em;
+}
+
+.social-links-content {
+  gap: 1em;
+  padding-left: 3em;
+}/*# sourceMappingURL=socialLinks.css.map */

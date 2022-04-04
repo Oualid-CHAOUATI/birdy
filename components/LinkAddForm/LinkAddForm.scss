@@ -1,0 +1,50 @@
+
+.link-modify-form-wrapper{
+    // gap: 1em;
+
+
+    .field-wrapper{
+        flex-grow: 1;
+    }
+    label{
+        max-height: 2.5em;
+        background-color: yellow!important;
+        border: 0!important;
+        svg{
+            height: 100%;
+            path,rect{
+                color: #000;
+                fill: currentColor;
+                
+
+            }
+            
+        }
+    }
+    input{
+        background-color: #fff!important;
+        color: #000!important;
+        border: 0!important;
+        flex-grow: 1;
+        &:focus + label{
+            background-color: rgb(91, 89, 209);
+        }
+        padding: .5em 1em!important;
+        font-size: inherit;
+
+      
+    }
+
+    .btn {
+
+        align-self: flex-end;
+        padding: .5em 1em;
+        border: 0;
+        font-size: inherit;
+        background-color: orange;
+        font-weight: bold;
+    }
+
+
+    
+}

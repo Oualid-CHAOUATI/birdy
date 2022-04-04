@@ -1,0 +1,48 @@
+$profile-img-s:80px;
+
+
+.comment-wrapper .header{
+    .img-wrapper{
+        --size:5em;
+        z-index: 3;
+       
+    }
+    position: relative;
+
+    .header-text{
+
+       
+        &>*{
+            padding: .2em 1em;
+
+        }
+        .profile-name{
+            position: relative;
+
+            background-color: #7CBE47;
+            width: max-content;
+            margin-left: 1em;
+
+            &::before{
+                content: "";
+                position: absolute;
+                $h:6px;
+                height: $h;
+                width: 100%;
+                right: 100%;
+                top: 49%;
+                background-color: inherit;
+                display: block;
+                z-index: 0;
+            }
+        }
+        .comment-date{
+            font-size: .8em;
+            .label{
+                margin-right: .2em;
+                opacity: .7;
+            }
+        }
+    }
+
+}

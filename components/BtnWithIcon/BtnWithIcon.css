@@ -1,0 +1,33 @@
+.btn-with-icon {
+  gap: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  position: relative;
+}
+.btn-with-icon .stats-wrapper {
+  position: absolute;
+  top: 70%;
+  right: -2em;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  border-top-left-radius: 0;
+  font-size: 0.8em;
+  color: #000;
+  background-color: inherit;
+}
+.btn-with-icon.like-btn {
+  background: #56EE0F;
+}
+.btn-with-icon.comment-btn {
+  background-color: #7879F1;
+}
+.btn-with-icon .text {
+  color: #000;
+}
+.btn-with-icon .icon-wrapper {
+  transition: 200ms;
+  transform-origin: 0% 100%;
+}
+.btn-with-icon:hover .icon-wrapper {
+  transform: rotate(-25deg);
+}/*# sourceMappingURL=BtnWithIcon.css.map */

@@ -1,0 +1,51 @@
+.question{
+  position: relative;
+
+  &:after{
+    content: "?";
+    background: blue;
+    width: 2ch;
+    aspect-ratio: 1;
+    display: inline-grid;
+    place-items: center;
+
+    margin-inline: .2em;
+    color: #fff;
+  }
+}
+
+
+
+
+body{
+  background: #000;
+  color: #fff;
+}
+
+
+.notification{
+  position: fixed;
+  inset: 0;
+  background-color: rgb(25, 0, 65);
+  z-index: 5;
+  transition: opacity 200ms;
+}
+.error-message{
+  background-color: red;
+  padding: 1em;
+  &::before{
+      content: "!";
+      $s:1em;
+      height: $s;
+      aspect-ratio: 1;
+      display: inline-block;
+      background-color: #fff;
+      color: red;
+      text-align: center;
+      margin-right: .8em;
+      line-height: $s;
+      border-radius: 50%;
+      padding: .3em;
+      box-sizing: content-box;
+  }
+}

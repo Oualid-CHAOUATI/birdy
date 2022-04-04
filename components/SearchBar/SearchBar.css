@@ -1,0 +1,17 @@
+.search-form-wrapper input, .search-form-wrapper button, .search-form-wrapper select {
+  padding: 0.5em 1em;
+  border: 0;
+}
+.search-form-wrapper .label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+.search-form-wrapper .btn {
+  background-color: orange;
+}
+.search-form-wrapper select {
+  align-self: flex-start;
+}
+.search-form-wrapper .title {
+  margin-top: 1em;
+}/*# sourceMappingURL=SearchBar.css.map */

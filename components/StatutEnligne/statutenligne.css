@@ -1,0 +1,36 @@
+.statut-enligne {
+  margin-block: 3em;
+}
+.statut-enligne label {
+  gap: 1em;
+}
+.statut-enligne .input {
+  background-color: rgb(255, 255, 255);
+  height: 1.7em;
+  aspect-ratio: 2;
+  border-radius: 5em;
+  position: relative;
+}
+.statut-enligne .input:before {
+  content: "";
+  position: absolute;
+  top: 0.3em;
+  height: 1.1em;
+  left: 0.3em;
+  right: calc(100% - 0.3em - 1.1em);
+  border-radius: 5em;
+  color: #000;
+  background-color: currentColor;
+  transition-property: left, right, color;
+  transition-delay: 0ms, 100ms, 0ms;
+  transition-duration: 300ms;
+}
+.on, .statut-enligne input:checked + label span.input:before {
+  right: 0.3em;
+  left: calc(100% - 0.3em - 1.1em) !important;
+  color: blue;
+  box-shadow: 0 0 20px currentColor;
+  transition-property: left, right, color;
+  transition-delay: 100ms, 0ms, 0ms;
+  transition-duration: 300ms, 300ms, 300ms;
+}/*# sourceMappingURL=statutenligne.css.map */

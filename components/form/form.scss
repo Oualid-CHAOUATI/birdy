@@ -1,0 +1,139 @@
+
+.form-wrapper{
+    box-shadow: 0 0 10px rgba(58, 43, 43, 0.448);
+    ;
+    border-radius: .3em;
+    width: max-content;
+    margin: auto;
+    max-width: 100%;
+    // border: 1px solid #fff;
+    $shadow-clr:rgba(0, 0, 255, 0.296);
+box-shadow: 0 0 10px $shadow-clr;
+    border-radius: 1em;
+    padding: .5em;
+
+    .form-content{
+        border-radius: inherit;
+    }
+}
+
+$form-i-pad:clamp(2em,10vw,4em);
+.form{
+  
+
+    gap: 1em;
+    padding-block: 2em;
+    padding-inline: $form-i-pad;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    flex-grow: 1;
+    background-color: rgb(23, 5, 106);
+    $clr1:rgb(0, 0, 0);
+    $clr2:rgb(87, 1, 48);
+    background:linear-gradient(45deg,$clr1,$clr2) ;
+    // background-color: #fff;
+   
+}
+
+.form .title{
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+
+
+
+.form button{
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+.main-btn-wrapper{
+    button{
+        padding: .7em 1em;
+        // background: black;
+        background: #fff;
+        // color: #fff;
+        color: #000;
+        border: 0;
+    }
+}
+.secondary-btn-wrapper{
+    
+    p{
+        &::first-letter{
+            text-transform: capitalize;
+        }
+        display: inline-block;
+    }
+    button{
+        background: transparent;
+
+        color: blue;
+
+        
+        text-decoration: underline;
+
+        border: 0;
+        width: max-content;
+        margin: .3em 1em;
+
+    }
+}
+
+
+.form-side{
+    align-self: stretch;
+    background: attr(data-img);
+    position: relative;
+
+    width: 500px;
+    max-width: 40vw;
+    background-color: rgba(19, 1, 1, 0.605);
+    color: #fff;
+    
+button{
+    color: inherit;
+    margin: 0;
+    margin-top: 1em;
+    background-color: blue;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+.txt{
+    font-size: 1.5em;
+text-transform: capitalize;
+}
+
+    img{
+        position: absolute;
+// inset: 0;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
+    }
+}
+
+
+
+@media (max-width:800px) {
+
+.form-side{
+    display: none!important;
+}
+
+form{
+    .none{
+
+        display: flex!important;
+        display: block!important;
+    }
+}
+    
+}

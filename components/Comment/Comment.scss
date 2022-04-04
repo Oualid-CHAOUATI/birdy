@@ -1,0 +1,35 @@
+$profile-img-s: 80px; //copied in commentProfileWrapper
+.comment-wrapper {
+  position: relative;
+.comment-content-wrapper{
+
+    padding-left: $profile-img-s/2;
+}
+  .comment-content {
+      min-width: 100%;
+    margin-top: - $profile-img-s/3;
+    padding-right: 1em;
+
+    padding: 1em;
+    padding-top: 2em;
+    z-index: 2;
+    position: relative;
+
+
+
+    background-color: rgb(46, 32, 32);
+
+    border-radius: 1.5em;
+
+    .img-wrapper{
+
+      img {
+        max-height: 70vh;
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+

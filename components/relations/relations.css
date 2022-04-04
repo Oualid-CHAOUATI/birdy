@@ -1,0 +1,22 @@
+.relations {
+  gap: clamp(2em, 10vh, 10em);
+  color: #fff;
+}
+.relations .numbers {
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+}
+.relations .imgs-wrapper .img-wrapper {
+  --size:3em;
+  height: var(--size);
+  width: calc(var(--size) / 2);
+  border-radius: 50%;
+}
+.relations .imgs-wrapper .img-wrapper img {
+  height: 100%;
+  width: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  box-shadow: -0.2em 0 #000;
+}/*# sourceMappingURL=relations.css.map */

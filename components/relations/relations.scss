@@ -1,0 +1,32 @@
+.relations{
+  $s:clamp(2em,10vh,10em);
+  gap:$s;
+  color: #fff;
+
+
+.numbers{
+  margin-top: .7em;
+  margin-bottom: 1em;
+}
+
+
+.imgs-wrapper{
+  .img-wrapper{
+    // $s:2em;
+    --size:3em;
+    height: var(--size);
+    width: calc(var(--size) / 2);
+    border-radius: 50%;
+    // overflow: visible;
+    img{
+      height: 100%;
+      width: 200%;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: -.2em 0 #000;
+    }
+  }
+}
+}
+
+

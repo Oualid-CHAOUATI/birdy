@@ -1,0 +1,64 @@
+.comment-form .text-area {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  color: #FFF;
+  outline: 0;
+  font-weight: bold;
+  background: linear-gradient(90.92deg, #4b0344, rgb(89, 2, 79), rgb(0, 6, 97), rgb(2, 45, 102), rgb(20, 12, 169), rgb(18, 10, 179), rgb(33, 25, 186), rgb(51, 45, 169), rgb(48, 41, 174));
+  box-shadow: 0 0 0 2px #000, 0 0 0 5px blue;
+  background-size: 500%;
+  transition-duration: 1200ms;
+  transition-property: background, box-shadow;
+  padding-left: 2em;
+  resize: vertical;
+}
+.comment-form .text-area:focus {
+  background-position-x: 50%;
+  box-shadow: 0 0 0 5px #000, 0 0 10px 5px rgba(23, 19, 209, 0.611);
+}
+.comment-form .text-area::-moz-placeholder {
+  color: inherit;
+}
+.comment-form .text-area:-ms-input-placeholder {
+  color: inherit;
+}
+.comment-form .text-area::placeholder {
+  color: inherit;
+}
+
+.comment-wrapper {
+  transition: opacity 500ms;
+}
+
+.comment-form:focus-within ~ .comment-wrapper {
+  opacity: 0.2;
+}
+
+.comment-form .text-area {
+  padding-bottom: 4em;
+}
+.comment-form .btns-wrapper {
+  gap: 0.5em;
+  margin-top: -1em;
+  position: relative;
+  z-index: 3;
+  margin-left: 1em;
+}
+.comment-form .btns-wrapper .btn {
+  background-color: blue;
+  border: 0;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+.comment-form .btns-wrapper .btn.submit {
+  background-color: rgb(165, 165, 32);
+  color: #000;
+}
+.comment-form .btns-wrapper .btn.img-btn {
+  position: relative;
+}
+.comment-form .btns-wrapper .btn.img-btn input {
+  background-color: red;
+  inset: 0;
+}/*# sourceMappingURL=CommentForm.css.map */

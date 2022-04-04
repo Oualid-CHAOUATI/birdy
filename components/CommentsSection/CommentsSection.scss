@@ -1,0 +1,37 @@
+.comments-section{
+
+    background-color: #111011;
+
+    margin-top: 2em;
+    padding: 1em;
+    padding-top: 0;
+    border-radius: 1em;
+    .title{
+        width: max-content;
+        position:relative;
+        transform: translateY(-50%);
+        $bg-color:213,71,236;
+        background-color: RGB($bg-color);
+
+     .text{
+        background-color: inherit;
+        width: max-content;
+        padding: .5em 1em;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.364);
+     }
+        &:before{
+            content: "";
+            position: absolute;
+            top: 98%;
+            left: 0;
+            $h:1em;
+            height:$h ;
+            width: $h *0.8;
+            background-color: inherit;
+            // z-index: -1;
+            clip-path: polygon(0 0,100% 0, 0% 100%);
+        }
+
+    }
+}

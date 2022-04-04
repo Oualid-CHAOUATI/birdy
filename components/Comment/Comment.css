@@ -1,0 +1,23 @@
+.comment-wrapper {
+  position: relative;
+}
+.comment-wrapper .comment-content-wrapper {
+  padding-left: 40px;
+}
+.comment-wrapper .comment-content {
+  min-width: 100%;
+  margin-top: -26.6666666667px;
+  padding-right: 1em;
+  padding: 1em;
+  padding-top: 2em;
+  z-index: 2;
+  position: relative;
+  background-color: rgb(46, 32, 32);
+  border-radius: 1.5em;
+}
+.comment-wrapper .comment-content .img-wrapper img {
+  max-height: 70vh;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Comment.css.map */

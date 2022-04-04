@@ -1,0 +1,22 @@
+.social-link-update {
+  padding: 0 1em 1.5em 1em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  background: #3c2626;
+}
+.social-link-update .btns-wrapper {
+  transform: translateY(-50%);
+  gap: 1em;
+}
+.social-link-update .btn {
+  padding-block: 0.5em;
+  border: 0;
+  color: #fff;
+  width: 15ch;
+}
+.social-link-update .btn.suppr {
+  background-color: red;
+}
+.social-link-update .btn.edit {
+  background: #D547EC;
+}/*# sourceMappingURL=socialLinkUpdate.css.map */

@@ -1,0 +1,27 @@
+
+.search-form-wrapper{
+$padding:.5em 1em;
+
+input,button,select{
+    padding: $padding;
+    border: 0;
+}
+
+.label{
+    display: block;
+    padding-bottom: .5em;
+}
+
+.btn{
+    background-color: orange;
+}
+
+
+select{
+    align-self: flex-start;
+}
+
+.title{
+    margin-top: 1em;
+}
+}

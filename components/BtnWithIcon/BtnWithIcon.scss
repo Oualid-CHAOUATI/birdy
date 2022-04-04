@@ -1,0 +1,49 @@
+.btn-with-icon{
+    gap: 1em;
+    padding: .5em 1em;
+    border-radius: .5em;
+
+    position: relative;
+
+    .stats-wrapper{
+        position: absolute;
+        $pos-x:-2em;
+        $pos-y:70%;
+        top: $pos-y;
+        right: $pos-x;
+        padding: .2em .8em;
+        border-radius: 2em;
+        border-top-left-radius: 0;
+        font-size: .8em;
+        color: #000;
+        background-color: inherit;
+
+    }
+
+
+    &.like-btn{
+        background: #56EE0F;
+        
+    }
+    &.comment-btn{
+        background-color: #7879F1;
+    }
+
+    .text{
+        color: #000;
+    }
+
+
+    .icon-wrapper{
+
+        transition: 200ms;
+        transform-origin: 0% 100%;
+    }
+
+    &:hover{
+        .icon-wrapper{
+            transform: rotate(-25deg);
+
+        }
+    }
+}

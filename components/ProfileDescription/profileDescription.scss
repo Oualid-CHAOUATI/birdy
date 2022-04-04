@@ -1,0 +1,145 @@
+.profile-description{// bg
+    position: relative;
+
+    .bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            background-color: rgb(105, 222, 10);
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #000;
+            opacity: .5;
+        }
+
+    }
+}
+
+
+.profile-description{
+    border-radius: 1em;
+    overflow:hidden;
+
+    $pad-x:3em;
+    $pad-y:2em;
+    padding: $pad-y $pad-x;
+    padding-bottom: 1.5 * $pad-y;
+
+
+
+
+    width: 100%;
+    gap: 1em;
+    color: #fff;
+
+
+
+
+
+    .img-wrapper{
+        height: 120px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 50%;
+        flex-shrink: 0;
+        img{
+
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+       
+    }
+    .infos{
+        flex: 1;
+        min-width: 300px;
+        max-width: 400px;
+    }
+
+    .id{
+        opacity: .7;
+        &:before{
+            content: "#";
+        }
+    }
+
+    .name{
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-block:.5em 1em ;
+    }
+    .text{
+        line-height: 1.3em;
+        // padding: ;
+
+        &:before,&:after{
+            color: rgb(43, 255, 0);
+            // font-size: 1em;
+            font-weight: bold;
+            display: inline-block;
+            transform: scale(1.5);
+        }
+        $margin:.6em;
+        &:before{content: open-quote;
+        margin-right: $margin;
+    }
+        &:after{content: close-quote;
+            margin-left: $margin;
+        
+        }
+    }
+
+    .name-effect{
+        position: absolute;
+        right: 0;
+        transform: rotate(90deg);
+        // opacity: .1;
+        filter:blur(2px);
+        font-size: 3em;
+        z-index: -1;
+    }
+}
+
+
+//  settings icon ......
+
+.settings-icon-wrapper{
+
+    position: absolute;
+    $pos:1em;
+    top:$pos ;
+    right:$pos ;
+
+    $size:2em;
+    height: $size;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: .2em;
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+
+.read-more.btn{
+    border: 0;
+    text-decoration: underline;
+    background-color:blue;
+    color: #fff;
+    padding: .2em;
+  
+}

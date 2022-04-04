@@ -1,0 +1,30 @@
+.social-link-update{
+  $pad-x:1em;
+  $pad-y:1em;
+  padding: 0 $pad-x $pad-y * 1.5 $pad-x;
+  margin-top: 3 * $pad-y;
+
+  background: rgb(60, 38, 38);
+
+  .social-link-wrapper{
+    width: 100%;
+  }
+  .btns-wrapper{
+    transform :translateY(-50%);
+    gap:1em;
+  }
+  .btn{
+    padding-block: .5em;
+    border: 0;
+    color: #fff;
+    width: 15ch;
+
+    &.suppr{
+      background-color: red;
+    }
+
+    &.reset{
+      background: #D547EC;
+    }
+  }
+}

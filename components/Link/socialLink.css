@@ -1,0 +1,20 @@
+.link-content {
+  color: #fff;
+}
+
+.social-link-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+}
+.social-link-wrapper .icon-wrapper {
+  height: 1.5em;
+  margin-right: 1em;
+}
+.social-link-wrapper .icon-wrapper svg {
+  height: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}/*# sourceMappingURL=socialLink.css.map */

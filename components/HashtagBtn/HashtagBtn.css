@@ -1,0 +1,15 @@
+.hastag-btn-wrapper {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  line-height: 2em;
+}
+.hastag-btn-wrapper button, .hastag-btn-wrapper span {
+  padding: 0.4em;
+}
+.hastag-btn-wrapper button {
+  background-color: red;
+  border: 0;
+  color: #fff;
+  height: 100%;
+  width: 2em;
+}/*# sourceMappingURL=HashtagBtn.css.map */

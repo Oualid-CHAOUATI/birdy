@@ -1,0 +1,70 @@
+.post-wrapper {
+  padding: 1em;
+  border-radius: 1em;
+  background: #4d0426;
+  gap: 1em;
+}
+.post-wrapper .post-header {
+  gap: 2em;
+}
+.post-wrapper .time-wrapper {
+  font-size: 0.8em;
+  gap: 1em;
+  padding: 0.5em 1.4em;
+  background: #000000;
+  border-radius: 4em;
+}
+.post-wrapper .time-wrapper .icon-wrapper {
+  height: 2em;
+  aspect-ratio: 1;
+}
+.post-wrapper .time-wrapper .icon-wrapper svg {
+  height: 100%;
+  aspect-ratio: 1;
+}
+.post-wrapper .post-content .img-wrapper {
+  border-radius: 1em;
+  margin-block: 1em;
+  height: 400px;
+  width: 100%;
+  max-height: 80vh;
+}
+.post-wrapper .post-content .img-wrapper img {
+  border-radius: inherit;
+}
+
+.post-btns {
+  gap: 2em;
+  margin-top: -1em;
+}
+.post-btns .stats-wrapper {
+  box-shadow: -2px -2px 0 1px #4d0426;
+}
+
+.post-header {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.post-header .profile-infos {
+  gap: 1em;
+}
+.post-header .profile-infos .img-wrapper {
+  --size:5em;
+}
+.post-header .profile-infos .text-infos .profile-id {
+  font-size: 0.8em;
+  margin-block: 0.2em;
+  opacity: 0.6;
+}
+.post-header .profile-infos .text-infos .profile-id:before {
+  content: "#";
+}
+.post-header .profile-infos .text-infos .subject {
+  margin-top: 1em;
+  text-decoration: underline;
+  color: rgb(213, 255, 184);
+}
+.post-header .profile-infos .text-infos .subject:before {
+  content: "#";
+}/*# sourceMappingURL=post.css.map */

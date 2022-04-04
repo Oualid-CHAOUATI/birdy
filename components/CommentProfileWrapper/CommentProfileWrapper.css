@@ -1,0 +1,36 @@
+.comment-wrapper .header {
+  position: relative;
+}
+.comment-wrapper .header .img-wrapper {
+  --size:5em;
+  z-index: 3;
+}
+.comment-wrapper .header .header-text > * {
+  padding: 0.2em 1em;
+}
+.comment-wrapper .header .header-text .profile-name {
+  position: relative;
+  background-color: #7CBE47;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 1em;
+}
+.comment-wrapper .header .header-text .profile-name::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  right: 100%;
+  top: 49%;
+  background-color: inherit;
+  display: block;
+  z-index: 0;
+}
+.comment-wrapper .header .header-text .comment-date {
+  font-size: 0.8em;
+}
+.comment-wrapper .header .header-text .comment-date .label {
+  margin-right: 0.2em;
+  opacity: 0.7;
+}/*# sourceMappingURL=CommentProfileWrapper.css.map */

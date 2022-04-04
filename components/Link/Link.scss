@@ -1,0 +1,40 @@
+.link-content{
+  color:#fff;
+
+
+  
+
+}
+
+
+
+
+.social-link-wrapper{
+  width: max-content;
+  max-width: 100%;
+  .icon-wrapper{
+    height: 1.5em;
+    margin-right: 1em;
+     svg{
+       height: 100%;
+       width: max-content;
+     }
+  
+  }
+}
+
+.link-in-input{
+  color: #000;
+  padding: .5em;
+  width: 100%;
+  // max-width: 500px;
+  border: 0;
+
+
+}
+.link-validate-btn{
+  padding: .5em .9em;
+  color: rgb(0, 0, 0)!important;
+  border: 0;
+  background-color: rgb(116, 116, 255);
+}

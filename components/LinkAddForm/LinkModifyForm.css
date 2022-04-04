@@ -1,0 +1,13 @@
+.link-modify-form label {
+  max-height: 2.5em;
+}
+.link-modify-form label svg {
+  height: 100%;
+}
+.link-modify-form label svg path, .link-modify-form label svg rect {
+  color: #000;
+  fill: currentColor;
+}
+.link-modify-form input {
+  background-color: #fff;
+}/*# sourceMappingURL=LinkModifyForm.css.map */

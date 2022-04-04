@@ -1,0 +1,66 @@
+.field-wrapper {
+  align-items: flex-start;
+}
+.field-wrapper.error-message {
+  border: 2px solid red;
+}
+.field-wrapper input,
+.field-wrapper label {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  order: 3;
+  color: #000;
+  background-color: transparent;
+  color: #fff;
+}
+.field-wrapper label {
+  text-transform: capitalize;
+  padding: 0.5em;
+  border-bottom-width: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+}
+.field-wrapper input {
+  padding: 0.3em 0.5em;
+  outline: 0;
+  width: 100%;
+}
+.field-wrapper input:required + label {
+  position: relative;
+}
+.field-wrapper input:required + label::after {
+  content: "*";
+}
+
+.field-wrapper:focus-within label {
+  background-color: #fff;
+  color: #000;
+}
+
+p.error-message {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  margin-block: 0.4em;
+  font-weight: bold;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+p.error-message:before {
+  content: "!";
+  color: #fff;
+  display: inline-block;
+  /* padding:.4em; */
+  width: 3ch;
+  text-align: center;
+  line-height: 3ch;
+  aspect-ratio: 1/1;
+  background: #000;
+  background: red;
+  margin-right: 0.5em;
+  border-radius: 0 50% 50% 50%;
+}/*# sourceMappingURL=field.css.map */

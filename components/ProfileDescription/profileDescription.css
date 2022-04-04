@@ -1,0 +1,112 @@
+.profile-description {
+  position: relative;
+}
+.profile-description .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.profile-description .bg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: rgb(105, 222, 10);
+}
+.profile-description .bg:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.profile-description {
+  border-radius: 1em;
+  overflow: hidden;
+  padding: 2em 3em;
+  padding-bottom: 3em;
+  width: 100%;
+  gap: 1em;
+  color: #fff;
+}
+.profile-description .img-wrapper {
+  height: 120px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.profile-description .img-wrapper img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-description .infos {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+.profile-description .id {
+  opacity: 0.7;
+}
+.profile-description .id:before {
+  content: "#";
+}
+.profile-description .name {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-block: 0.5em 1em;
+}
+.profile-description .text {
+  line-height: 1.3em;
+}
+.profile-description .text:before, .profile-description .text:after {
+  color: rgb(43, 255, 0);
+  font-weight: bold;
+  display: inline-block;
+  transform: scale(1.5);
+}
+.profile-description .text:before {
+  content: open-quote;
+  margin-right: 0.6em;
+}
+.profile-description .text:after {
+  content: close-quote;
+  margin-left: 0.6em;
+}
+.profile-description .name-effect {
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+  filter: blur(2px);
+  font-size: 3em;
+  z-index: -1;
+}
+
+.settings-icon-wrapper {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 2em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0.2em;
+}
+.settings-icon-wrapper svg {
+  height: 100%;
+  width: 100%;
+}
+
+.read-more.btn {
+  border: 0;
+  text-decoration: underline;
+  background-color: blue;
+  color: #fff;
+  padding: 0.2em;
+}/*# sourceMappingURL=profileDescription.css.map */

@@ -1,0 +1,30 @@
+.person-card {
+  border: 2px solid rgba(0, 0, 255, 0.302);
+  border-radius: 1em;
+  padding: 1.4em;
+  gap: 1em;
+}
+.person-card .img-wrapper {
+  border-radius: 56% 44% 17% 83%/22% 27% 73% 78%;
+}
+.person-card .side {
+  gap: 1em;
+  align-items: flex-start;
+}
+.person-card .side .follow-unfollow {
+  background-color: yellow;
+  border: 0;
+  padding: 0.5em 1.5em;
+  color: #000;
+  border-radius: 0.4em;
+}
+.person-card .side .visit-profile {
+  background-color: rgb(0, 81, 255);
+  border: 0;
+  padding: 0.5em 1.5em;
+  color: rgb(255, 255, 255);
+  border-radius: 0.4em;
+}
+.person-card .side .name {
+  text-transform: capitalize;
+}/*# sourceMappingURL=PersonCard.css.map */

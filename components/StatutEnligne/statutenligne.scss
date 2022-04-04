@@ -1,0 +1,55 @@
+$offset:.3em;
+$h:1.7em;
+$s:$h - 2 * $offset; 
+
+
+
+.statut-enligne{
+  margin-block: 3em;
+
+  label{
+gap: 1em;
+
+  }
+  
+  .input {
+    background-color: rgb(255, 255, 255);
+
+    height: $h;
+    aspect-ratio: 2;
+    border-radius: 5em;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      
+      top: $offset;
+      height: $s;
+      left: $offset;
+      right: calc(100% - $offset - $s);
+      border-radius: 5em;
+      color: #000;
+      background-color: currentColor;
+      // @extend .on;
+      transition-property: left,right,color;
+  transition-delay: 0ms,100ms,0ms;
+  transition-duration: 300ms;
+    }
+
+  }
+  input:checked + label span.input:before{
+    @extend .on
+
+  }
+
+}
+
+.on{
+  right: $offset;
+  left: calc(100% - $offset - $s)!important;
+  color: blue;
+  box-shadow:0 0 20px  currentColor;
+  transition-property: left,right,color;
+  transition-delay: 100ms,0ms,0ms;
+  transition-duration: 300ms,300ms,300ms;
+}

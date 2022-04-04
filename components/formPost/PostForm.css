@@ -1,0 +1,155 @@
+.post-form {
+  padding-block: 1em;
+}
+.post-form > .btn-wrapper .btn {
+  background-color: transparent;
+  padding: 0.8em 1em;
+  border: 0;
+  font-weight: bold;
+  border-radius: 0.4em;
+  position: relative;
+  z-index: 1;
+}
+.post-form > .btn-wrapper .btn span {
+  position: relative;
+}
+.post-form > .btn-wrapper .btn:after {
+  content: "";
+  position: absolute;
+  background-color: blue;
+  inset: 0;
+  z-index: -1;
+  border: 0 solid blue;
+  border-radius: inherit;
+  -webkit-animation: animate 4s infinite;
+          animation: animate 4s infinite;
+}
+
+@-webkit-keyframes animate {
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes animate {
+  50% {
+    transform: scale(1.15);
+  }
+}
+.post-form-modal {
+  position: fixed;
+  z-index: 3;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.879);
+}
+.post-form-modal .content {
+  padding: 5em;
+  background-color: #000;
+  box-shadow: 0 0 4px rgba(0, 0, 255, 0.359);
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+}
+.post-form-modal .content .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  border: 0;
+  padding: 1em;
+}
+.post-form-modal .hashtag-form-wrapper {
+  gap: 0;
+}
+.post-form-modal .hashtag-form-wrapper p {
+  margin-bottom: 0.5em;
+}
+.post-form-modal .hashtag-form-wrapper input,
+.post-form-modal .hashtag-form-wrapper button {
+  padding: 0.5em 1em;
+}
+.post-form-modal .hashtag-form-wrapper input {
+  padding: 0.5em;
+  color: #fff;
+  background-color: rgb(34, 27, 27);
+  border-radius: 0.3em;
+  border: 0;
+  outline: 0;
+}
+.post-form-modal .hashtag-form-wrapper .input-wrapper {
+  position: relative;
+}
+.post-form-modal .hashtag-form-wrapper .input-wrapper:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  width: 0%;
+  transition: width 200ms;
+}
+.post-form-modal .hashtag-form-wrapper .input-wrapper:focus-within:before {
+  width: 100%;
+}
+.post-form-modal .hashtag-form-wrapper .input-wrapper.error-state:before {
+  width: 100%;
+  background-color: red;
+}
+.post-form-modal .hashtag-form-wrapper button {
+  background-color: #000;
+  border: 2px solid #fff;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+.post-form-modal .hashtag-form-wrapper button span {
+  display: inline-block;
+  transform: scale(1.7);
+}
+.post-form-modal .main-form-wrapper {
+  background-color: #C50099;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.post-form-modal .main-form-wrapper .hastags-btns-wrapper {
+  padding-bottom: 1em;
+}
+.post-form-modal .main-form-wrapper .main-form-content {
+  background-color: #000;
+  border-radius: inherit;
+  padding: 1em;
+}
+.post-form-modal .main-form-wrapper .main-form-content .hastags-txt-wrapper:before {
+  content: "#";
+}
+.post-form-modal .main-form-wrapper .main-form-content textarea {
+  background-color: transparent;
+  border: 0;
+  padding-top: 1em;
+  padding-left: 0.5em;
+  color: #fff;
+  transition: padding 300ms;
+  border-left: 3px solid #fff;
+  margin-block: 0.5em;
+  outline: 0;
+}
+.post-form-modal .main-form-wrapper .main-form-content textarea:focus {
+  padding-left: 1em;
+}
+.post-form-modal .main-form-wrapper .main-form-content button {
+  background-color: yellow;
+  border: 0;
+  padding: 0.5em 1em;
+  align-self: flex-start;
+  color: #000;
+  font-weight: bold;
+}
+
+.hastags-txt-wrapper span {
+  display: inline-block;
+  width: 1ch;
+  height: 1ch;
+  margin-inline: 1ch;
+  background-color: rgb(86, 83, 218);
+  border-radius: 50%;
+}/*# sourceMappingURL=PostForm.css.map */

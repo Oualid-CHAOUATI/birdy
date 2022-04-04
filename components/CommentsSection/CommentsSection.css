@@ -1,0 +1,35 @@
+.comments-section {
+  background-color: #111011;
+  margin-top: 2em;
+  padding: 1em;
+  padding-top: 0;
+  border-radius: 1em;
+}
+.comments-section .title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  transform: translateY(-50%);
+  background-color: RGB(213, 71, 236);
+}
+.comments-section .title .text {
+  background-color: inherit;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5em 1em;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.364);
+}
+.comments-section .title:before {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: 0;
+  height: 1em;
+  width: 0.8em;
+  background-color: inherit;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 0% 100%);
+}/*# sourceMappingURL=CommentsSection.css.map */
