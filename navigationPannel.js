@@ -3,6 +3,7 @@ import { FormsContext } from './pages/mainPage';
 import { useContext } from "react";
 
 import"./navigationPannel.css"
+import { NavLink } from 'react-router-dom';
 function NavigationPannel ({userID}){
     let ctxValue = useContext(FormsContext);
 
@@ -48,6 +49,10 @@ function NavigationPannel ({userID}){
             <li onClick={gotoFollowersPage}>Followers</li>
             <li onClick={gotoFollowingsPage}>Followings</li>
             <li onClick={gotoProfilePage}>Profile</li>
+<NavLink to="/profile">
+    profile
+</NavLink>
+
             <li onClick={gotoPostsPage}>Posts</li>
             <li onClick={gotoConnectionPage}>connexion</li>
             <li onClick={gotoInscriptionPage}>inscription</li>

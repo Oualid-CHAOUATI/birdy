@@ -12,6 +12,7 @@ import LinksSection from "../components/LinksSection/LinksSection";
 import FormConnexion from "../components/FormConnexion/FormConnexion";
 import FormInscription from "../components/FormInscription/FormInscription";
 import SearchBar from "../components/SearchBar/SearchBar";
+import { BrowserRouter,Route, Routes } from "react-router-dom";
 
 export const FormsContext = createContext();
 
@@ -220,6 +221,7 @@ this.gotoCurrentPage()
     this.state.currentPagelabel=PAGE_PROFILE
 
     this.saveState()
+    return this.state.currentPage;
 
   }
   gotoPostsPage(userID = this.state.userID) {
@@ -278,15 +280,42 @@ this.gotoCurrentPage()
   render() {
     const ctxValue = this.ctxValue;
     return (
+
+      <BrowserRouter>
       <FormsContext.Provider value={ctxValue}>
 
         <div className={`notification flex-center `+(!this.state.showNotification&&" hide "||"")}>{this.state.notificationMessage}</div>
         <NavigationPannel userID={this.ctxValue.userID} />
 
-        <div className="container-max-width x-margin-auto">
-          {this.state.currentPage}
-        </div>
+
+<div className="container-max-width x-margin-auto">
+
+<Routes>
+
+
+<Route path="/profile" element={<>
+
+<div>
+        <ProfileDescription imgSrc={this.state.imgSrc} />
+        <ProfileDescriptionBtns userID={this.state.ID} />
+          <LinksSection allowEdit={true} links={this.state.links} />
+      </div>
+
+</>
+
+
+}/>
+<Route path="/formConnexion"/>
+
+
+
+</Routes>
+
+
+</div>
+       
       </FormsContext.Provider>
+      </BrowserRouter>
     );
   }
 }
