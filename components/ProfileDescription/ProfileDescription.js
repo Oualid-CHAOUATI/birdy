@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState ,useRef} from "react";
 
 import "./profileDescription.css";
 import createSettingsSVG from "./other/settingsIcon";
+import { useParams } from "react-router-dom";
 
 const PROFILE_CLASS = "profile-description flex-center f-wrap x-margin-auto ";
 const IMG_WRAPPER_CLASS = "img-wrapper";
@@ -53,6 +54,13 @@ return totallyFilled;
 }
 
 function ProfileDescription({name=NAME,userID,description=DESCRIPTION,imgSrc}) {
+
+  const params=useParams();
+  console.log('====================================');
+  console.log( params);
+  console.log('====================================');
+
+
   // const [imgSrc, setImgSrc] = useState("");
 
   // const getImgSrc = useCallback(() => {
